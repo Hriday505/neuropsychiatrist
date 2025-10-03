@@ -1,6 +1,25 @@
+@import "tailwindcss";
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
+}
+@font-face {
+  font-family: "Ibrand";
+  src: url("../public/fonts/ibrand/Ibrand.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ibrand-font {
+  font-family: "Ibrand", sans-serif;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -9,34 +28,22 @@
     --foreground: #ededed;
   }
 }
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  color: var(--foreground);
   background: var(--background);
+  color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+}
+/* globals.css or your component-level CSS */
+.card-3d {
+  perspective: 1000px;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+.card-inner {
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  will-change: transform;
 }
