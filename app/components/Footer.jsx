@@ -163,7 +163,7 @@ const Footer = () => {
             </p>
           ))}
           <Link
-            href="/chambers"
+            href="#Chambers"
             className="text-teal-400 text-sm mt-3 inline-block hover:underline"
           >
             View All Chambers →

@@ -78,7 +78,7 @@ export default function ContactPage() {
             animate="visible"
             className="text-4xl md:text-5xl font-bold"
           >
-            Contact the Clinic
+           1:1 online consultancy
           </motion.h1>
           <motion.p
             variants={fadeUp}

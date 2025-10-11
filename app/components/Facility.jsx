@@ -7,25 +7,29 @@ const cardData = [
     id: 1,
     title: "Neuro-Developmental",
     icon: "/img/icon1.png",
-    description: "Evaluation for delays, learning issues, and autism spectrum.",
+    description:
+      "Comprehensive assessment and therapy for autism, ADHD, and learning challenges.",
   },
   {
     id: 2,
     title: "Psychiatric & Therapy",
     icon: "/img/icon2.png",
-    description: "Treatment for mood, anxiety, OCD, and related disorders.",
+    description:
+      "Diagnosis and treatment for depression, anxiety, OCD, and emotional disorders.",
   },
   {
     id: 3,
     title: "Counselling & Support",
     icon: "/img/icon3.png",
-    description: "Help with stress, grief, self-confidence, and relationships.",
+    description:
+      "Personalized counselling to manage stress, relationships, and self-growth.",
   },
   {
     id: 4,
     title: "Rehabilitation Services",
     icon: "/img/icon4.png",
-    description: "Speech, occupational, and special education therapies.",
+    description:
+      "Speech, occupational, and behavioral therapies for holistic recovery.",
   },
 ];
 
@@ -65,7 +69,7 @@ const Facility = () => {
       <motion.div
         initial="hidden"
         whileInView="show"
-        viewport={{ once: true, amount: 0.7 }} // wait until 70% visible
+        viewport={{ once: true, amount: 0.7 }}
         variants={containerVariants}
         className="relative z-10 text-white text-center px-4 max-w-[1200px] mx-auto py-12"
       >
@@ -73,14 +77,15 @@ const Facility = () => {
           variants={cardVariant}
           className="text-[26px] sm:text-[32px] md:text-[36px] font-semibold leading-snug"
         >
-          Expertises{" "}
+          Expertises
         </motion.h1>
 
         <motion.p
           variants={cardVariant}
           className="text-sm sm:text-base pb-10 max-w-xl mx-auto opacity-90"
         >
-          Complete care for mental health, development, and rehabilitation.
+          Comprehensive neuropsychiatric and rehabilitation services under one
+          roof.
         </motion.p>
 
         {/* Cards */}
@@ -99,7 +104,7 @@ const Facility = () => {
                 />
                 <h2 className="font-bold text-lg text-center">{item.title}</h2>
                 <p className="text-[13px] text-center mt-2">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  {item.description}
                 </p>
               </div>
             </motion.div>

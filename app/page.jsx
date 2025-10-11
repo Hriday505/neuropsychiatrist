@@ -1,5 +1,4 @@
-"use client"; // 👈 MUST be the first line
-
+"use client";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Facility from "./components/Facility";
@@ -12,6 +11,7 @@ import Footer from "./components/Footer";
 import PageLoader from "./components/PageLoader";
 import { motion } from "framer-motion";
 
+// Reusable animation settings
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
   show: {
@@ -27,6 +27,8 @@ export default function Home() {
       <PageLoader />
       <div className="overflow-x-hidden">
         <Navbar />
+
+        {/* Hero - animates immediately after load */}
         <motion.div variants={fadeInUp} initial="hidden" animate="show">
           <Hero />
         </motion.div>
