@@ -14,25 +14,30 @@ const chambers = [
       "25, Madhusudan Banerjee Rd, Pratiraksha Nagar, Birati, North Dumdum, West Bengal 700051",
     phone: "099039 52999",
   },
+
   {
-    name: "Doctors Plus Birati",
-    address: "Birati, Kolkata, West Bengal (Exact location to be updated)",
-    phone: "N/A",
+    name: "Doctor Plus",
+    address:
+      "AKD House, 65/2, Madhusudan Banerjee Rd, Mahajati Nagar, Birati, Kolkata, North Dumdum, West Bengal 700051",
+    phone: " 090516 18305",
   },
+
   {
     name: "Popular Doctor's Chamber",
     address:
       "Shop No, Ca-16, Rail Pukur Rd, near Delight, Deshbandhu Nagar, Baguiati, Kolkata, West Bengal 700059",
     phone: "091633 05444",
   },
+
   {
     name: "Romalinda Multispeciality Hospital & Diagnostic Centre",
     address:
       "Netaji Subhas Road, Netaji Nagar, Madhyamgram, Kolkata, West Bengal 700132",
     phone: "074396 90721",
   },
+
   {
-    name: "Millennium Diagnostic Centre & Polyclinic",
+    name: "Millennium Diagnostic Centre",
     address:
       "Binapani Apartment, Krishnanagar Rd, Noapara, Barasat, West Bengal 700124",
     phone: "098362 08500",
@@ -43,8 +48,8 @@ const chambers = [
     phone: "092323 08679",
   },
   {
-    name: "Krishna Medical Hall",
-    address: "Habra, West Bengal (Exact address to be updated)",
+    name: "Krishna Medicle Hall",
+    address: "Swamiji Road, Swamiji Roadgourbanga Road, Habra-743263",
     phone: "N/A",
   },
   {
@@ -59,26 +64,34 @@ const chambers = [
   },
   {
     name: "Saha Medical",
-    address: "Basirhat, West Bengal (Exact address to be updated)",
-    phone: "N/A",
+    address: "Sarat Bisaw Road, Kacharipara, Basirhat, West Bengal 743411",
+    phone: "07947105165",
   },
   {
     name: "HEALTH CITY CLINIC",
     address: "Bazarpara, Uluberia, Howrah, West Bengal 711316",
     phone: "080171 14486",
   },
+
   {
     name: "New Maity Medical",
     address:
       "Opposite Amta Hospital, Chandni, Amta, Howrah, West Bengal 711401",
     phone: "097325 87898",
   },
+
   {
-    name: "Sefa Diagnostic Centre & Polyclinic",
+    name: "Sefa diagnostic centre & poly clinic",
     address:
       "Ranihati-Amta Road, RANIHATI M. PLAZA MARKET (Near State Bank of India), Ranihati, West Bengal 711302",
     phone: "084205 80021",
   },
+  // {
+  //   name: "Mamata Medico",
+  //   address:
+  //     "J6JG+P6Q, Howrah-Domjur-Bargachhia-Amta, Fokor Dokan, Baruipara, Domjur, Howrah, West Bengal 711405",
+  //   phone: "098309 41639",
+  // },
 ];
 
 export default function ChambersCards() {
