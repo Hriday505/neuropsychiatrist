@@ -3,60 +3,10 @@ import { motion } from "framer-motion";
 
 const chambers = [
   {
-    name: "New Maity Medical",
+    name: "Asha The Hope",
     address:
-      "Opposite Amta Hospital, Chandni, Amta, Howrah, West Bengal 711401",
-    phone: "097325 87898",
-  },
-  {
-    name: "HEALTH CITY CLINIC",
-    address: "Bazarpara, Uluberia, Howrah, West Bengal 711316",
-    phone: "080171 14486",
-  },
-  {
-    name: "Sefa diagnostic centre & poly clinic",
-    address:
-      "Ranihati-Amta Road, RANIHATI M. PLAZA MARKET (Near State Bank of India), Ranihati, West Bengal 711302",
-    phone: "084205 80021",
-  },
-  {
-    name: "Mamata Medico",
-    address:
-      "J6JG+P6Q, Howrah-Domjur-Bargachhia-Amta, Fokor Dokan, Baruipara, Domjur, Howrah, West Bengal 711405",
-    phone: "098309 41639",
-  },
-  {
-    name: "Popular Doctor's Chamber",
-    address:
-      "Shop No, Ca-16, Rail Pukur Rd, near Delight, Deshbandhu Nagar, Baguiati, Kolkata, West Bengal 700059",
-    phone: "091633 05444",
-  },
-  {
-    name: "Kushari Pharmacy",
-    address: "Rate Para Rd, Ratepara, Bangaon, West Bengal 743235",
-    phone: "084365 01700",
-  },
-  {
-    name: "Ganguly Medical Stores",
-    address: "VQC3+M2H, Kalibari Rd, Garhpara, Gobardanga, West Bengal 743252",
-    phone: "097326 38601",
-  },
-  {
-    name: "Pharmaco Doctors Chamber",
-    address: "RMV4+3RX, Habra, West Bengal 743271",
-    phone: "092323 08679",
-  },
-  {
-    name: "Millennium Diagnostic Centre",
-    address:
-      "Binapani Apartment, Krishnanagar Rd, Noapara, Barasat, West Bengal 700124",
-    phone: "098362 08500",
-  },
-  {
-    name: "Romalinda Multispeciality Hospital & Diagnostic Centre",
-    address:
-      "Netaji Subhas Road, Netaji Nagar, Madhyamgram, Kolkata, West Bengal 700132",
-    phone: "074396 90721",
+      "33, J N Tewari Rd, Gora Bazar, Rajbari, Dum Dum, Kolkata, West Bengal 700028",
+    phone: "094323 07066",
   },
   {
     name: "Apollo Clinic Birati",
@@ -65,10 +15,69 @@ const chambers = [
     phone: "099039 52999",
   },
   {
-    name: "Asha The Hope",
+    name: "Doctors Plus Birati",
+    address: "Birati, Kolkata, West Bengal (Exact location to be updated)",
+    phone: "N/A",
+  },
+  {
+    name: "Popular Doctor's Chamber",
     address:
-      "33, J N Tewari Rd, Gora Bazar, Rajbari, Dum Dum, Kolkata, West Bengal 700028",
-    phone: "094323 07066",
+      "Shop No, Ca-16, Rail Pukur Rd, near Delight, Deshbandhu Nagar, Baguiati, Kolkata, West Bengal 700059",
+    phone: "091633 05444",
+  },
+  {
+    name: "Romalinda Multispeciality Hospital & Diagnostic Centre",
+    address:
+      "Netaji Subhas Road, Netaji Nagar, Madhyamgram, Kolkata, West Bengal 700132",
+    phone: "074396 90721",
+  },
+  {
+    name: "Millennium Diagnostic Centre & Polyclinic",
+    address:
+      "Binapani Apartment, Krishnanagar Rd, Noapara, Barasat, West Bengal 700124",
+    phone: "098362 08500",
+  },
+  {
+    name: "Pharmaco Doctors Chamber",
+    address: "RMV4+3RX, Habra, West Bengal 743271",
+    phone: "092323 08679",
+  },
+  {
+    name: "Krishna Medical Hall",
+    address: "Habra, West Bengal (Exact address to be updated)",
+    phone: "N/A",
+  },
+  {
+    name: "Ganguly Medical Stores",
+    address: "VQC3+M2H, Kalibari Rd, Garhpara, Gobardanga, West Bengal 743252",
+    phone: "097326 38601",
+  },
+  {
+    name: "Kushari Pharmacy",
+    address: "Rate Para Rd, Ratepara, Bangaon, West Bengal 743235",
+    phone: "084365 01700",
+  },
+  {
+    name: "Saha Medical",
+    address: "Basirhat, West Bengal (Exact address to be updated)",
+    phone: "N/A",
+  },
+  {
+    name: "HEALTH CITY CLINIC",
+    address: "Bazarpara, Uluberia, Howrah, West Bengal 711316",
+    phone: "080171 14486",
+  },
+  {
+    name: "New Maity Medical",
+    address:
+      "Opposite Amta Hospital, Chandni, Amta, Howrah, West Bengal 711401",
+    phone: "097325 87898",
+  },
+  {
+    name: "Sefa Diagnostic Centre & Polyclinic",
+    address:
+      "Ranihati-Amta Road, RANIHATI M. PLAZA MARKET (Near State Bank of India), Ranihati, West Bengal 711302",
+    phone: "084205 80021",
   },
 ];
 
