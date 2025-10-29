@@ -57,7 +57,7 @@ const Hero = () => {
           className="order-1 lg:order-2 md:col-span-1 lg:col-span-6 relative"
         >
           <Image
-            src="/img/Neurophsycological-Evaluations.png"
+            src="/img/profile.png"
             alt="Doctor with patient"
             width={600}
             height={500}
