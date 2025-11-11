@@ -5,11 +5,8 @@ import { motion } from "framer-motion";
 
 const container = {
   hidden: {},
-  show: {
-    transition: { staggerChildren: 0.3, delayChildren: 0.4 },
-  },
+  show: { transition: { staggerChildren: 0.3, delayChildren: 0.4 } },
 };
-
 const fadeUp = {
   hidden: { opacity: 0, y: 60 },
   show: {
@@ -18,7 +15,6 @@ const fadeUp = {
     transition: { duration: 1.2, ease: [0.22, 1, 0.36, 1] },
   },
 };
-
 const slideLeft = {
   hidden: { opacity: 0, x: -80 },
   show: {
@@ -27,7 +23,6 @@ const slideLeft = {
     transition: { duration: 1.4, ease: [0.22, 1, 0.36, 1] },
   },
 };
-
 const slideRight = {
   hidden: { opacity: 0, x: 80 },
   show: {
@@ -43,7 +38,7 @@ const Hero = () => {
   if (!mounted) return null;
 
   return (
-    <section className="w-full px-4 pt-24 pb-12 lg:pt-32 lg:pb-20 bg-white box-border overflow-x-hidden">
+    <section className="w-full  px-4 pt-24 pb-12 lg:pt-32 lg:pb-20 bg-white box-border overflow-x-hidden">
       <motion.div
         variants={container}
         initial="hidden"
@@ -51,17 +46,62 @@ const Hero = () => {
         viewport={{ once: true, amount: 0.3 }}
         className="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 items-center"
       >
-        {/* Image */}
+        {/* Image + Blob shape behind (no image shadow) */}
         <motion.div
           variants={slideRight}
           className="order-1 lg:order-2 md:col-span-1 lg:col-span-6 relative"
         >
+          {/* BLOB */}
+          <svg
+            aria-hidden
+            className="absolute -right-10 -top-6 lg:-right-16 lg:-top-8 w-[520px] h-[520px] z-0"
+            viewBox="0 0 600 600"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <defs>
+              {/* tweak these colors to your palette */}
+              <linearGradient id="blobGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stopColor="#ff4d8d" />
+                <stop offset="100%" stopColor="#7c3aed" />
+              </linearGradient>
+              <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="6" />
+              </filter>
+            </defs>
+            <path
+              d="M438.6,90.5C480.4,137.8,501.5,207.8,485.2,271.1C468.9,334.4,415.1,390.9,352.1,430.9C289.1,470.9,217,494.3,157.3,468.9C97.6,443.5,50.3,369.3,40.7,298.9C31.1,228.5,59.1,162,111.7,116.7C164.3,71.4,241.5,47.2,312.4,54.4C383.3,61.6,396.8,43.2,438.6,90.5Z"
+              fill="url(#blobGrad)"
+              filter="url(#soft)"
+            />
+          </svg>
+
+          {/* optional dotted grid (remove if you don't want it) */}
+          <svg
+            aria-hidden
+            className="absolute left-2 top-10 w-24 h-24 opacity-40 text-gray-300 z-0"
+            viewBox="0 0 100 100"
+            fill="currentColor"
+          >
+            <defs>
+              <pattern
+                id="dotGrid"
+                width="10"
+                height="10"
+                patternUnits="userSpaceOnUse"
+              >
+                <circle cx="2" cy="2" r="2" />
+              </pattern>
+            </defs>
+            <rect width="100" height="100" fill="url(#dotGrid)" />
+          </svg>
+
+          {/* IMAGE (no shadow) */}
           <Image
             src="/img/profile.png"
             alt="Doctor with patient"
             width={600}
             height={500}
-            className="rounded-[40px]"
+            className="relative z-10 rounded-[40px]" // no shadow/ring
             priority
           />
         </motion.div>

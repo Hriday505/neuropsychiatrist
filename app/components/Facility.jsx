@@ -57,7 +57,7 @@ const cardVariant = {
 
 const Facility = () => {
   return (
-    <section className="relative w-full lg:mt-24 min-h-[60vh] overflow-hidden">
+    <section className="relative w-full lg:-mt-16 min-h-[60vh] overflow-hidden">
       {/* Background */}
       <div
         className="absolute inset-0 bg-cover bg-center"
