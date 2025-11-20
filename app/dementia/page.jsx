@@ -10,7 +10,7 @@ const fadeUp = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
 };
 
-export default function SchizophreniaPage() {
+export default function DementiaPage() {
   return (
     <>
       <Navbar />
@@ -24,7 +24,7 @@ export default function SchizophreniaPage() {
             animate="visible"
             className="text-4xl md:text-5xl font-bold"
           >
-            Understanding Schizophrenia
+            Understanding Dementia
           </motion.h1>
           <motion.p
             variants={fadeUp}
@@ -33,12 +33,14 @@ export default function SchizophreniaPage() {
             transition={{ delay: 0.2 }}
             className="mt-4 text-lg md:text-xl max-w-2xl mx-auto"
           >
-            Schizophrenia is a complex mental health condition that affects thinking, perception, and behavior. With proper treatment and support, people can manage symptoms and live fulfilling lives.
+            Dementia affects memory, thinking, and daily functioning. While
+            there's no cure, early diagnosis and comprehensive care can help
+            manage symptoms and improve quality of life.
           </motion.p>
         </div>
       </section>
 
-      {/* About Schizophrenia */}
+      {/* About Dementia */}
       <section className="py-16 bg-white">
         <div className="max-w-[1200px] mx-auto grid md:grid-cols-2 gap-12 px-4 items-center">
           <motion.div
@@ -48,8 +50,8 @@ export default function SchizophreniaPage() {
             viewport={{ once: true }}
           >
             <Image
-              src="/img/schizophrenia.jpg"
-              alt="Schizophrenia"
+              src="/img/dementia.webp"
+              alt="Dementia"
               width={600}
               height={400}
               className="rounded-xl shadow-lg object-cover w-full h-auto"
@@ -62,10 +64,14 @@ export default function SchizophreniaPage() {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl font-bold text-teal-600 mb-4">
-              What is Schizophrenia?
+              What is Dementia?
             </h2>
             <p className="text-gray-600 leading-relaxed">
-              Schizophrenia is a chronic brain disorder that affects how a person thinks, feels, and behaves. It involves episodes of psychosis, including hallucinations, delusions, and disorganized thinking. Early intervention and ongoing treatment can significantly improve outcomes.
+              Dementia is an umbrella term for conditions characterized by
+              cognitive decline that interferes with daily life. Alzheimer's
+              disease is the most common type, but there are several forms of
+              dementia. It affects memory, thinking, orientation, comprehension,
+              calculation, learning capacity, language, and judgment.
             </p>
           </motion.div>
         </div>
@@ -85,12 +91,12 @@ export default function SchizophreniaPage() {
           </motion.h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
             {[
-              "Hallucinations (hearing or seeing things)",
-              "Delusions (false beliefs)",
-              "Disorganized thinking and speech",
-              "Abnormal motor behavior",
-              "Reduced emotional expression",
-              "Social withdrawal and isolation",
+              "Memory loss affecting daily activities",
+              "Difficulty with familiar tasks",
+              "Problems with language and communication",
+              "Disorientation to time and place",
+              "Poor or decreased judgment",
+              "Changes in mood and personality",
             ].map((symptom, idx) => (
               <motion.div
                 key={idx}
@@ -121,10 +127,10 @@ export default function SchizophreniaPage() {
           </motion.h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              "Genetic factors and family history",
-              "Brain chemistry and structure differences",
-              "Environmental factors and stress",
-              "Substance use during adolescence",
+              "Age and genetic factors",
+              "Brain changes and protein deposits",
+              "Cardiovascular disease and diabetes",
+              "Head injuries and lifestyle factors",
             ].map((cause, idx) => (
               <motion.div
                 key={idx}
@@ -151,25 +157,25 @@ export default function SchizophreniaPage() {
             viewport={{ once: true }}
             className="text-3xl font-bold text-teal-600 mb-8"
           >
-            Treatment Options
+            Management & Support Options
           </motion.h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
             {[
               {
-                title: "Antipsychotic Medication",
-                desc: "Medications to manage symptoms and prevent relapses.",
+                title: "Medication",
+                desc: "Drugs to slow progression and manage symptoms of dementia.",
               },
               {
-                title: "Psychotherapy",
-                desc: "Individual and family therapy to develop coping strategies.",
+                title: "Cognitive Stimulation",
+                desc: "Activities and therapies to maintain mental function and engagement.",
               },
               {
-                title: "Rehabilitation Services",
-                desc: "Skills training for daily living and social functioning.",
+                title: "Behavioral Interventions",
+                desc: "Strategies to manage behavioral and psychological symptoms.",
               },
               {
-                title: "Support Systems",
-                desc: "Community support and peer programs for ongoing recovery.",
+                title: "Family Support",
+                desc: "Education, counseling, and resources for caregivers and families.",
               },
             ].map((t, idx) => (
               <motion.div
@@ -199,10 +205,12 @@ export default function SchizophreniaPage() {
           viewport={{ once: true }}
           className="text-3xl font-bold mb-6"
         >
-          Get Professional Support Today
+          Early Assessment Makes a Difference
         </motion.h2>
         <p className="max-w-2xl mx-auto mb-6">
-          Early intervention is key to managing schizophrenia. Contact us for comprehensive evaluation and personalized treatment planning.
+          If you're concerned about memory changes or cognitive decline, early
+          evaluation can help determine the cause and develop an appropriate
+          care plan.
         </p>
         <button className="bg-white text-teal-600 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition">
           Book Appointment

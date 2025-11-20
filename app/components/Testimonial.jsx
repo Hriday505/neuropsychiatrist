@@ -5,7 +5,7 @@ import { FaArrowRight } from "react-icons/fa";
 const Cards = [
   {
     id: 10,
-    profile: "https://randomuser.me/api/portraits/men/81.jpg", // Bengali man look
+    profile: "Patient", // Bengali man look
     name: "Sourav Chatterjee",
     treatment: "Depression Treatment",
     headline: "Feeling like myself again",
@@ -14,7 +14,7 @@ const Cards = [
   },
   {
     id: 11,
-    profile: "https://randomuser.me/api/portraits/women/68.jpg", // Bengali woman look
+    profile: "Patient", // Bengali man look
     name: "Moumita Sen",
     treatment: "Anxiety Therapy",
     headline: "Calmness in everyday life",
@@ -23,7 +23,7 @@ const Cards = [
   },
   {
     id: 12,
-    profile: "https://randomuser.me/api/portraits/men/15.jpg", // Bengali man look
+    profile: "Patient", // Bengali man look
     name: "Arindam Ghosh",
     treatment: "Panic Disorder",
     headline: "Overcame panic attacks",
@@ -32,7 +32,7 @@ const Cards = [
   },
   {
     id: 13,
-    profile: "https://randomuser.me/api/portraits/women/21.jpg", // Bengali woman look
+    profile: "Patient", // Bengali man look
     name: "Debjani Das",
     treatment: "OCD Treatment",
     headline: "Regained control of life",
@@ -41,7 +41,7 @@ const Cards = [
   },
   {
     id: 14,
-    profile: "https://randomuser.me/api/portraits/men/23.jpg", // Bengali man look
+    profile: "Patient", // Bengali man look
     name: "Subhasish Roy",
     treatment: "Schizophrenia Care",
     headline: "Supportive and caring approach",

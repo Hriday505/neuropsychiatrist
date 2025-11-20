@@ -145,9 +145,12 @@ export default function About() {
         <h2 className="text-3xl font-bold text-gray-800">
           Ready to Experience Exceptional Care?
         </h2>
-        <button className="mt-6 bg-teal-600 text-white px-8 py-3 rounded-full hover:bg-teal-700 transition">
-          Book Your Appointment Today
-        </button>
+        <Link
+          href="/appointment"
+          className="bg-[#3EC8BD] px-4 py-2 rounded-[10px] text-white hover:bg-[#30b0a6] transition duration-300"
+        >
+          Book Appointment
+        </Link>
       </section>
     </div>
   );

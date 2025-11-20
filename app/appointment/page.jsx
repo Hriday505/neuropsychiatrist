@@ -1,14 +1,13 @@
 "use client";
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { InlineWidget } from "react-calendly"; // ✅ Import Calendly widget
+import { InlineWidget } from "react-calendly";
 import Nav from "../components/Navbar";
 import Footer from "../components/Footer";
 
 export default function BookAppointment() {
   const [formData, setFormData] = useState({
     name: "",
-    email: "",
     phone: "",
     date: "",
     time: "",
@@ -52,7 +51,6 @@ export default function BookAppointment() {
         {/* Calendly Embed */}
         <div className="flex justify-center py-10 px-4">
           <div className="w-full max-w-3xl bg-white shadow-xl rounded-xl p-6">
-            {/* Replace the URL with your own Calendly event link */}
             <InlineWidget url="https://calendly.com/dhriday505/30min" />
           </div>
         </div>

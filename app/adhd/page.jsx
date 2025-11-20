@@ -10,7 +10,7 @@ const fadeUp = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
 };
 
-export default function SchizophreniaPage() {
+export default function ADHDPage() {
   return (
     <>
       <Navbar />
@@ -24,7 +24,7 @@ export default function SchizophreniaPage() {
             animate="visible"
             className="text-4xl md:text-5xl font-bold"
           >
-            Understanding Schizophrenia
+            Attention Deficit Hyperactivity Disorder (ADHD)
           </motion.h1>
           <motion.p
             variants={fadeUp}
@@ -33,12 +33,14 @@ export default function SchizophreniaPage() {
             transition={{ delay: 0.2 }}
             className="mt-4 text-lg md:text-xl max-w-2xl mx-auto"
           >
-            Schizophrenia is a complex mental health condition that affects thinking, perception, and behavior. With proper treatment and support, people can manage symptoms and live fulfilling lives.
+            ADHD affects attention, hyperactivity, and impulse control. With
+            proper diagnosis and treatment, individuals with ADHD can learn to
+            manage symptoms and succeed in all areas of life.
           </motion.p>
         </div>
       </section>
 
-      {/* About Schizophrenia */}
+      {/* About ADHD */}
       <section className="py-16 bg-white">
         <div className="max-w-[1200px] mx-auto grid md:grid-cols-2 gap-12 px-4 items-center">
           <motion.div
@@ -48,8 +50,8 @@ export default function SchizophreniaPage() {
             viewport={{ once: true }}
           >
             <Image
-              src="/img/schizophrenia.jpg"
-              alt="Schizophrenia"
+              src="/img/adhd.jpeg"
+              alt="ADHD"
               width={600}
               height={400}
               className="rounded-xl shadow-lg object-cover w-full h-auto"
@@ -62,10 +64,14 @@ export default function SchizophreniaPage() {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl font-bold text-teal-600 mb-4">
-              What is Schizophrenia?
+              What is ADHD?
             </h2>
             <p className="text-gray-600 leading-relaxed">
-              Schizophrenia is a chronic brain disorder that affects how a person thinks, feels, and behaves. It involves episodes of psychosis, including hallucinations, delusions, and disorganized thinking. Early intervention and ongoing treatment can significantly improve outcomes.
+              ADHD is a neurodevelopmental disorder that affects both children
+              and adults. It involves persistent patterns of inattention,
+              hyperactivity, and impulsivity that interfere with functioning or
+              development. ADHD is one of the most common mental health
+              conditions in children and often continues into adulthood.
             </p>
           </motion.div>
         </div>
@@ -85,12 +91,12 @@ export default function SchizophreniaPage() {
           </motion.h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
             {[
-              "Hallucinations (hearing or seeing things)",
-              "Delusions (false beliefs)",
-              "Disorganized thinking and speech",
-              "Abnormal motor behavior",
-              "Reduced emotional expression",
-              "Social withdrawal and isolation",
+              "Difficulty paying attention or staying focused",
+              "Hyperactivity and restlessness",
+              "Impulsive behavior and decision-making",
+              "Difficulty organizing tasks and activities",
+              "Forgetfulness in daily activities",
+              "Trouble following through on instructions",
             ].map((symptom, idx) => (
               <motion.div
                 key={idx}
@@ -122,9 +128,9 @@ export default function SchizophreniaPage() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               "Genetic factors and family history",
-              "Brain chemistry and structure differences",
-              "Environmental factors and stress",
-              "Substance use during adolescence",
+              "Brain structure and function differences",
+              "Premature birth or low birth weight",
+              "Environmental factors during pregnancy",
             ].map((cause, idx) => (
               <motion.div
                 key={idx}
@@ -156,20 +162,20 @@ export default function SchizophreniaPage() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
             {[
               {
-                title: "Antipsychotic Medication",
-                desc: "Medications to manage symptoms and prevent relapses.",
+                title: "Medication",
+                desc: "Stimulant and non-stimulant medications to improve focus and reduce hyperactivity.",
               },
               {
-                title: "Psychotherapy",
-                desc: "Individual and family therapy to develop coping strategies.",
+                title: "Behavioral Therapy",
+                desc: "Cognitive-behavioral therapy and behavior modification techniques.",
               },
               {
-                title: "Rehabilitation Services",
-                desc: "Skills training for daily living and social functioning.",
+                title: "Educational Support",
+                desc: "Accommodations and strategies for academic and workplace success.",
               },
               {
-                title: "Support Systems",
-                desc: "Community support and peer programs for ongoing recovery.",
+                title: "Lifestyle Management",
+                desc: "Exercise, nutrition, sleep hygiene, and organizational skills training.",
               },
             ].map((t, idx) => (
               <motion.div
@@ -199,10 +205,12 @@ export default function SchizophreniaPage() {
           viewport={{ once: true }}
           className="text-3xl font-bold mb-6"
         >
-          Get Professional Support Today
+          Take Control of ADHD Today
         </motion.h2>
         <p className="max-w-2xl mx-auto mb-6">
-          Early intervention is key to managing schizophrenia. Contact us for comprehensive evaluation and personalized treatment planning.
+          ADHD doesn't have to limit your potential. With proper diagnosis and
+          treatment, you can develop strategies to thrive. Schedule your
+          evaluation today.
         </p>
         <button className="bg-white text-teal-600 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition">
           Book Appointment

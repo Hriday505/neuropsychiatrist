@@ -33,15 +33,12 @@ export default function AutismPage() {
             transition={{ delay: 0.2 }}
             className="mt-4 text-lg md:text-xl max-w-2xl mx-auto"
           >
-            Autism Spectrum Disorder is a developmental condition that affects
-            communication, social interaction, and behavior. With the right
-            support, individuals with autism can thrive and live fulfilling
-            lives.
+            ASD is a developmental condition that affects communication, behavior, and social interaction. With proper support and intervention, individuals with autism can thrive and reach their full potential.
           </motion.p>
         </div>
       </section>
 
-      {/* About */}
+      {/* About Autism */}
       <section className="py-16 bg-white">
         <div className="max-w-[1200px] mx-auto grid md:grid-cols-2 gap-12 px-4 items-center">
           <motion.div
@@ -68,11 +65,7 @@ export default function AutismPage() {
               What is Autism Spectrum Disorder?
             </h2>
             <p className="text-gray-600 leading-relaxed">
-              Autism Spectrum Disorder (ASD) is a lifelong developmental
-              condition that influences how people perceive the world, interact
-              with others, and manage behavior. Symptoms vary widely, which is
-              why it is called a "spectrum." Early diagnosis and therapy can
-              make a significant difference in outcomes.
+              Autism Spectrum Disorder is a neurodevelopmental condition characterized by differences in social communication, interaction, and behavior. It's called a "spectrum" because symptoms and abilities vary widely among individuals. Early diagnosis and intervention can make a significant difference.
             </p>
           </motion.div>
         </div>
@@ -88,16 +81,16 @@ export default function AutismPage() {
             viewport={{ once: true }}
             className="text-3xl font-bold text-teal-600 mb-10"
           >
-            Common Symptoms
+            Signs & Symptoms
           </motion.h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
             {[
-              "Difficulty with verbal and nonverbal communication",
-              "Challenges in making eye contact and building relationships",
-              "Repetitive behaviors or routines",
-              "Strong interest in specific topics or activities",
-              "Unusual responses to sensory input (sounds, lights, textures)",
-              "Delayed speech or language skills",
+              "Difficulty with social communication",
+              "Repetitive behaviors or interests",
+              "Challenges with nonverbal communication",
+              "Difficulty adapting to routine changes",
+              "Sensory sensitivities",
+              "Intense focus on specific topics",
             ].map((symptom, idx) => (
               <motion.div
                 key={idx}
@@ -129,9 +122,9 @@ export default function AutismPage() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               "Genetic factors and family history",
-              "Differences in brain development and structure",
-              "Environmental factors during pregnancy and birth",
-              "Co-occurring conditions such as epilepsy or ADHD",
+              "Brain development differences",
+              "Advanced parental age",
+              "Certain genetic conditions",
             ].map((cause, idx) => (
               <motion.div
                 key={idx}
@@ -148,7 +141,7 @@ export default function AutismPage() {
         </div>
       </section>
 
-      {/* Treatments */}
+      {/* Treatment Options */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-[1200px] mx-auto px-4 text-center">
           <motion.h2
@@ -164,19 +157,19 @@ export default function AutismPage() {
             {[
               {
                 title: "Behavioral Therapy",
-                desc: "Techniques to improve communication, social, and learning skills.",
+                desc: "Applied Behavior Analysis (ABA) and other evidence-based interventions.",
               },
               {
-                title: "Speech & Language Therapy",
-                desc: "Helps individuals improve verbal and nonverbal communication.",
+                title: "Speech Therapy",
+                desc: "Communication skills development and language support.",
               },
               {
                 title: "Occupational Therapy",
-                desc: "Assists in daily living skills and managing sensory issues.",
+                desc: "Daily living skills and sensory integration support.",
               },
               {
-                title: "Family Support & Education",
-                desc: "Guidance for families to better understand and support loved ones.",
+                title: "Educational Support",
+                desc: "Individualized education plans and specialized learning approaches.",
               },
             ].map((t, idx) => (
               <motion.div
@@ -206,11 +199,10 @@ export default function AutismPage() {
           viewport={{ once: true }}
           className="text-3xl font-bold mb-6"
         >
-          Start the Journey with the Right Support
+          Early Intervention Makes a Difference
         </motion.h2>
         <p className="max-w-2xl mx-auto mb-6">
-          Autism is not an illness to be “cured,” but with the right therapies
-          and guidance, individuals can live empowered and meaningful lives.
+          If you suspect autism in yourself or a loved one, early assessment and intervention can provide the best outcomes. Schedule a consultation today.
         </p>
         <button className="bg-white text-teal-600 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition">
           Book Appointment

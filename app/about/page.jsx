@@ -209,7 +209,7 @@ export default function About() {
             viewport={{ once: true }}
             className="mt-6 bg-teal-600 text-white px-8 py-3 rounded-full hover:bg-teal-700 transition"
           >
-            Book Your Appointment
+            <Link href="/appointment">Book Appointment</Link>
           </motion.button>
         </section>
       </div>

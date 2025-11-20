@@ -10,7 +10,7 @@ const fadeUp = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
 };
 
-export default function SchizophreniaPage() {
+export default function SexualDysfunctionPage() {
   return (
     <>
       <Navbar />
@@ -24,7 +24,7 @@ export default function SchizophreniaPage() {
             animate="visible"
             className="text-4xl md:text-5xl font-bold"
           >
-            Understanding Schizophrenia
+            Sexual Dysfunction
           </motion.h1>
           <motion.p
             variants={fadeUp}
@@ -33,12 +33,14 @@ export default function SchizophreniaPage() {
             transition={{ delay: 0.2 }}
             className="mt-4 text-lg md:text-xl max-w-2xl mx-auto"
           >
-            Schizophrenia is a complex mental health condition that affects thinking, perception, and behavior. With proper treatment and support, people can manage symptoms and live fulfilling lives.
+            Sexual dysfunction affects many individuals and couples. With
+            compassionate care and evidence-based treatment, these challenges
+            can be addressed to restore intimacy and well-being.
           </motion.p>
         </div>
       </section>
 
-      {/* About Schizophrenia */}
+      {/* About Sexual Dysfunction */}
       <section className="py-16 bg-white">
         <div className="max-w-[1200px] mx-auto grid md:grid-cols-2 gap-12 px-4 items-center">
           <motion.div
@@ -48,8 +50,8 @@ export default function SchizophreniaPage() {
             viewport={{ once: true }}
           >
             <Image
-              src="/img/schizophrenia.jpg"
-              alt="Schizophrenia"
+              src="/img/dysfunction.jpg"
+              alt="Sexual Dysfunction"
               width={600}
               height={400}
               className="rounded-xl shadow-lg object-cover w-full h-auto"
@@ -62,10 +64,14 @@ export default function SchizophreniaPage() {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl font-bold text-teal-600 mb-4">
-              What is Schizophrenia?
+              What is Sexual Dysfunction?
             </h2>
             <p className="text-gray-600 leading-relaxed">
-              Schizophrenia is a chronic brain disorder that affects how a person thinks, feels, and behaves. It involves episodes of psychosis, including hallucinations, delusions, and disorganized thinking. Early intervention and ongoing treatment can significantly improve outcomes.
+              Sexual dysfunction refers to persistent problems during any phase
+              of the sexual response cycle that prevent individuals or couples
+              from experiencing satisfaction. It can affect desire, arousal,
+              orgasm, or cause pain during sexual activity. These issues are
+              common and treatable.
             </p>
           </motion.div>
         </div>
@@ -85,12 +91,12 @@ export default function SchizophreniaPage() {
           </motion.h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
             {[
-              "Hallucinations (hearing or seeing things)",
-              "Delusions (false beliefs)",
-              "Disorganized thinking and speech",
-              "Abnormal motor behavior",
-              "Reduced emotional expression",
-              "Social withdrawal and isolation",
+              "Reduced sexual desire or interest",
+              "Difficulty becoming aroused",
+              "Problems reaching orgasm",
+              "Pain during sexual activity",
+              "Premature or delayed ejaculation",
+              "Relationship and emotional distress",
             ].map((symptom, idx) => (
               <motion.div
                 key={idx}
@@ -121,10 +127,10 @@ export default function SchizophreniaPage() {
           </motion.h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              "Genetic factors and family history",
-              "Brain chemistry and structure differences",
-              "Environmental factors and stress",
-              "Substance use during adolescence",
+              "Psychological factors and stress",
+              "Medical conditions and medications",
+              "Hormonal changes and imbalances",
+              "Relationship issues and communication problems",
             ].map((cause, idx) => (
               <motion.div
                 key={idx}
@@ -156,20 +162,20 @@ export default function SchizophreniaPage() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
             {[
               {
-                title: "Antipsychotic Medication",
-                desc: "Medications to manage symptoms and prevent relapses.",
-              },
-              {
                 title: "Psychotherapy",
-                desc: "Individual and family therapy to develop coping strategies.",
+                desc: "Individual and couples therapy to address psychological factors.",
               },
               {
-                title: "Rehabilitation Services",
-                desc: "Skills training for daily living and social functioning.",
+                title: "Medical Treatment",
+                desc: "Medications and medical interventions for physical causes.",
               },
               {
-                title: "Support Systems",
-                desc: "Community support and peer programs for ongoing recovery.",
+                title: "Hormone Therapy",
+                desc: "Treatment for hormonal imbalances affecting sexual function.",
+              },
+              {
+                title: "Lifestyle Changes",
+                desc: "Exercise, stress management, and communication skills training.",
               },
             ].map((t, idx) => (
               <motion.div
@@ -199,10 +205,12 @@ export default function SchizophreniaPage() {
           viewport={{ once: true }}
           className="text-3xl font-bold mb-6"
         >
-          Get Professional Support Today
+          Restore Intimacy and Well-being
         </motion.h2>
         <p className="max-w-2xl mx-auto mb-6">
-          Early intervention is key to managing schizophrenia. Contact us for comprehensive evaluation and personalized treatment planning.
+          Sexual dysfunction is treatable. Take the first step toward improving
+          your intimate relationships and overall quality of life with
+          professional support.
         </p>
         <button className="bg-white text-teal-600 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition">
           Book Appointment
