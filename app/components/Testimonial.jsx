@@ -5,7 +5,7 @@ import { FaArrowRight } from "react-icons/fa";
 const Cards = [
   {
     id: 10,
-    profile: "Patient", // Bengali man look
+    profile: "/img/user.png", // Bengali man look
     name: "Sourav Chatterjee",
     treatment: "Depression Treatment",
     headline: "Feeling like myself again",
@@ -14,7 +14,7 @@ const Cards = [
   },
   {
     id: 11,
-    profile: "Patient", // Bengali man look
+    profile: "/img/user.png", // Bengali man look
     name: "Moumita Sen",
     treatment: "Anxiety Therapy",
     headline: "Calmness in everyday life",
@@ -23,7 +23,7 @@ const Cards = [
   },
   {
     id: 12,
-    profile: "Patient", // Bengali man look
+    profile: "/img/user.png", // Bengali man look
     name: "Arindam Ghosh",
     treatment: "Panic Disorder",
     headline: "Overcame panic attacks",
@@ -32,7 +32,7 @@ const Cards = [
   },
   {
     id: 13,
-    profile: "Patient", // Bengali man look
+    profile: "/img/user.png", // Bengali man look
     name: "Debjani Das",
     treatment: "OCD Treatment",
     headline: "Regained control of life",
@@ -41,7 +41,7 @@ const Cards = [
   },
   {
     id: 14,
-    profile: "Patient", // Bengali man look
+    profile: "/img/user.png", // Bengali man look
     name: "Subhasish Roy",
     treatment: "Schizophrenia Care",
     headline: "Supportive and caring approach",
