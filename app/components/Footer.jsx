@@ -187,7 +187,7 @@ const Footer = () => {
               <MdEmail className="text-teal-500 text-[14px]" />
             </div>
             <p className="text-white text-sm ibrand-font">
-              info@neuroliving.com
+              drabirdas009@gmail.com
             </p>
           </div>
 

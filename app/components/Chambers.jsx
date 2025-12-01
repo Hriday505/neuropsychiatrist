@@ -19,13 +19,13 @@ const chambers = [
     name: "Doctor Plus",
     address:
       "AKD House, 65/2, Madhusudan Banerjee Rd, Mahajati Nagar, Birati, Kolkata, North Dumdum, West Bengal 700051",
-    phone: "090516 18305",
+    phone: "6289901792",
   },
   {
     name: "Popular Doctor's Chamber",
     address:
       "Shop No, Ca-16, Rail Pukur Rd, near Delight, Deshbandhu Nagar, Baguiati, Kolkata, West Bengal 700059",
-    phone: "091633 05444",
+    phone: "9007085943",
   },
   {
     name: "Romalinda Multispeciality Hospital & Diagnostic Centre",
@@ -37,7 +37,7 @@ const chambers = [
     name: "Millennium Diagnostic Centre",
     address:
       "Binapani Apartment, Krishnanagar Rd, Noapara, Barasat, West Bengal 700124",
-    phone: "098362 08500",
+    phone: "9831571605",
   },
   {
     name: "Pharmaco Doctors Chamber",
@@ -62,18 +62,18 @@ const chambers = [
   {
     name: "Saha Medical",
     address: "Sarat Bisaw Road, Kacharipara, Basirhat, West Bengal 743411",
-    phone: "07947105165",
+    phone: "7063667887 || 70013 40601",
   },
   {
     name: "HEALTH CITY CLINIC",
     address: "Bazarpara, Uluberia, Howrah, West Bengal 711316",
-    phone: "080171 14486",
+    phone: "8697628661",
   },
   {
     name: "New Maity Medical",
     address:
       "Opposite Amta Hospital, Chandni, Amta, Howrah, West Bengal 711401",
-    phone: "097325 87898",
+    phone: "8617427828",
   },
   {
     name: "Sefa diagnostic centre & poly clinic",

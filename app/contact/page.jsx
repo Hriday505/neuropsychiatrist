@@ -33,7 +33,7 @@ export default function ContactPage() {
 
     emailjs
       .send(
-        "service_a112h3d", // 🔹 your service ID
+        "service_vtuxjmo", // 🔹 your service ID
         "template_rs8ntna", // 🔹 your template ID
         {
           title: formData.subject,
@@ -78,7 +78,7 @@ export default function ContactPage() {
             animate="visible"
             className="text-4xl md:text-5xl font-bold"
           >
-           1:1 online consultancy
+            1:1 online consultancy
           </motion.h1>
           <motion.p
             variants={fadeUp}
@@ -116,7 +116,7 @@ export default function ContactPage() {
               </p>
               <p className="flex items-center gap-2">
                 <Mail className="w-5 h-5 text-[#1FA7A0]" />
-                drneuro@example.com
+                drabirdas009@gmail.com
               </p>
               <p className="flex items-center gap-2">
                 <Phone className="w-5 h-5 text-[#1FA7A0]" />

@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Link from "next/link";
 import { motion } from "framer-motion";
 
 const Banner = () => {
@@ -43,9 +44,12 @@ const Banner = () => {
             Get personalised treatment in a safe and supportive environment.
             Take the first step toward healing and peace of mind.
           </p>
-          <button className="bg-white text-black px-6 py-2 rounded-lg text-sm font-medium hover:scale-105 transition-all duration-300">
-            Book Your Appointment
-          </button>
+          <Link
+            href="/appointment"
+            className="bg-white px-4 py-2 rounded-[10px] text-black hover:bg-[#30b0a6] transition duration-300"
+          >
+            Book Appointment
+          </Link>
         </motion.div>
 
         {/* Right Side Image */}

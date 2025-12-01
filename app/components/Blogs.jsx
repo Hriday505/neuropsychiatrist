@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const Blog = [
   {
@@ -9,6 +10,7 @@ const Blog = [
     button: "Read More",
     text: "Understanding Depression: Learn about its symptoms, causes, and how timely treatment can help restore quality of life.",
     link: "/blogs/depression",
+    href: "/blog1",
   },
   {
     id: 201,
@@ -16,6 +18,7 @@ const Blog = [
     button: "Read More",
     text: "Managing Anxiety & Panic Attacks: Practical coping strategies and professional treatments that bring lasting relief.",
     link: "/blogs/anxiety",
+    href: "/blog2",
   },
 ];
 
@@ -53,18 +56,9 @@ const Blogs = () => {
       variants={containerVariant}
       className="w-full px-4 md:px-8 py-10 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center"
     >
-      {/* Left Image Block with background image inside the teal box */}
+      {/* Left Image Block */}
       <div className="lg:col-span-6 flex justify-center lg:justify-end relative lg:pr-68">
-        {/* Teal Box with Image */}
-        <div className="w-[250px] sm:w-[300px] h-[300px] sm:h-[350px] rounded-[30px] overflow-hidden absolute top-4 left-2 lg:left-12 z-0">
-          {/* <img
-            src="/img/thumb_400.jpg"
-            alt="Inside Box"
-            className="w-full h-full object-cover"
-          /> */}
-        </div>
-
-        {/* Foreground Overlapping Image */}
+        <div className="w-[250px] sm:w-[300px] h-[300px] sm:h-[350px] rounded-[30px] overflow-hidden absolute top-4 left-2 lg:left-12 z-0" />
         <img
           src="/img/thumb_400.jpg"
           alt=""
@@ -86,7 +80,7 @@ const Blogs = () => {
         <div className="space-y-5">
           {Blog.map((blogs, index) => (
             <motion.div
-              key={index}
+              key={blogs.id}
               custom={index}
               initial="hidden"
               whileInView="visible"
@@ -97,13 +91,16 @@ const Blogs = () => {
               <img
                 src={blogs.src}
                 className="w-full sm:w-[100px] h-[150px] sm:h-[100px] object-cover rounded-md mb-3 sm:mb-0 sm:mr-4"
-                alt={`Blog ${index}`}
+                alt={`Blog ${index + 1}`}
               />
               <div className="flex flex-col justify-between text-[12px]">
                 <p className="mb-2">{blogs.text}</p>
-                <button className="bg-[#3EC8BD] px-3 py-1 rounded-md text-white text-[10px] w-fit hover:bg-[#35b2aa] transition">
-                  {blogs.button}
-                </button>
+
+                <Link href={blogs.href}>
+                  <button className="bg-[#3EC8BD] px-3 py-1 rounded-md text-white text-[10px] w-fit hover:bg-[#35b2aa] transition">
+                    {blogs.button}
+                  </button>
+                </Link>
               </div>
             </motion.div>
           ))}

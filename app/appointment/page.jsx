@@ -56,7 +56,7 @@ export default function BookAppointment() {
         </div>
 
         {/* Doctor Info Section */}
-        <section className="py-16 px-6 text-center bg-teal-50 mt-12">
+        {/* <section className="py-16 px-6 text-center bg-teal-50 mt-12">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -69,7 +69,7 @@ export default function BookAppointment() {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. At aperiam
             modi ea veritatis delectus magni minima recusandae molestiae,
           </p>
-        </section>
+        </section> */}
       </div>
       <Footer />
     </>

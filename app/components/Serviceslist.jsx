@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const Facilities = [
   {
@@ -8,36 +9,63 @@ const Facilities = [
     service: "Depression",
     description:
       "Evidence-based therapies and medication to lift mood and restore daily functioning.",
+    href: "/depression",
   },
   {
     id: 101,
     service: "Generalised Anxiety Disorder",
     description:
       "Treatment to reduce constant worry and improve relaxation, focus, and confidence.",
+    href: "/generalised",
   },
   {
     id: 102,
     service: "Panic Disorder",
     description:
       "Support to manage sudden panic attacks and regain control over daily life.",
+    href: "/panic",
   },
   {
     id: 103,
     service: "Obsessive Compulsive Disorder",
     description:
       "Therapy and care to ease intrusive thoughts and repetitive behaviours.",
+    href: "/ocd",
   },
   {
     id: 104,
     service: "Schizophrenia",
     description:
       "Personalised treatment plans to improve stability, functioning, and quality of life.",
+    href: "/schizo",
   },
   {
     id: 105,
     service: "Autism Spectrum Disorder",
     description:
       "Therapies and guidance to support communication, learning, and social development.",
+    href: "/autism",
+  },
+  {
+    id: 106,
+    service: "Substance Use Disorders",
+    description:
+      "Comprehensive de-addiction support with counselling and medication to reduce dependence and prevent relapse.",
+    href: "/substance-abuse",
+  },
+  {
+    id: 107,
+    service: "Sexual Dysfunction",
+    description:
+      "Confidential assessment and treatment for sexual health concerns affecting intimacy, confidence, and relationships.",
+    href: "/sexual-dysfunction",
+  },
+  {
+    id: 108,
+    service: "ADHD (Attention-Deficit/Hyperactivity Disorder)",
+    description:
+      "Structured evaluation and treatment to improve focus, control impulsivity, and enhance performance at work or school.",
+    href: "/adhd",
   },
 ];
 
@@ -62,6 +90,10 @@ const Serviceslist = () => {
     window.addEventListener("resize", checkScreen);
     return () => window.removeEventListener("resize", checkScreen);
   }, []);
+
+  // 👇 Get the currently active facility once
+  const activeFacility =
+    Facilities.find((f) => f.id === hoverId) ?? Facilities[0];
 
   return (
     <motion.div
@@ -118,14 +150,19 @@ const Serviceslist = () => {
             {/* Text */}
             <div className="text-center lg:text-left flex-1">
               <h2 className="text-[18px] font-semibold text-black ibrand-font mb-2">
-                {Facilities.find((f) => f.id === hoverId)?.service}
+                {activeFacility.service}
               </h2>
               <p className="text-sm text-gray-600 mb-4 leading-relaxed">
-                {Facilities.find((f) => f.id === hoverId)?.description}
+                {activeFacility.description}
               </p>
-              <button className="bg-[#00c6a9] hover:bg-[#00b1a0] text-white text-[13px] px-4 py-2 rounded-md transition-all">
-                Learn More
-              </button>
+
+              {activeFacility.href && (
+                <Link href={activeFacility.href}>
+                  <button className="bg-[#00c6a9] hover:bg-[#00b1a0] text-white text-[13px] px-4 py-2 rounded-md transition-all">
+                    Learn More
+                  </button>
+                </Link>
+              )}
             </div>
           </div>
         </motion.div>
