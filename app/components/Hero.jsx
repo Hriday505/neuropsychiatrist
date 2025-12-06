@@ -97,11 +97,11 @@ const Hero = () => {
 
           {/* IMAGE (no shadow) */}
           <Image
-            src="/img/profile.png"
+            src="/img/profile2.png"
             alt="Doctor with patient"
             width={600}
             height={500}
-            className="relative z-10 rounded-[40px]" // no shadow/ring
+            className="relative  -mb-3 z-10 rounded-[40px]" // no shadow/ring
             priority
           />
         </motion.div>
@@ -122,7 +122,7 @@ const Hero = () => {
             variants={fadeUp}
             className="text-gray-600 text-[14px] sm:text-[15px] md:text-[16px] leading-relaxed font-semibold"
           >
-            As a dedicated specialist, I provide one-on-one care to help you
+            As a dedicated psychiatrist, I provide one-on-one care to help you
             manage anxiety, depression, and emotional challenges — guiding you
             toward healing and balance in life.
           </motion.p>
