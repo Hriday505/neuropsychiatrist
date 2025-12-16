@@ -54,7 +54,7 @@ const Blogs = () => {
       whileInView="visible"
       viewport={{ once: true, amount: 0.3 }}
       variants={containerVariant}
-      className="w-full px-4 md:px-8 py-10 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center"
+      className="w-full px-4 md:px-8 py-10 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center bg-white dark:bg-gray-900"
     >
       {/* Left Image Block */}
       <div className="lg:col-span-6 flex justify-center lg:justify-end relative lg:pr-68">
@@ -68,10 +68,10 @@ const Blogs = () => {
 
       {/* Right Content */}
       <div className="lg:col-span-6 space-y-6">
-        <h1 className="text-[26px] sm:text-[32px] text-black font-medium ibrand-font text-center lg:text-left">
+        <h1 className="text-[26px] sm:text-[32px] text-black dark:text-white font-medium ibrand-font text-center lg:text-left">
           Our Latest <span className="text-[#3EC8BD]">Blogs</span>
         </h1>
-        <p className="text-[12px] sm:text-[14px] text-gray-600 text-center lg:text-left">
+        <p className="text-[12px] sm:text-[14px] text-gray-600 dark:text-gray-300 text-center lg:text-left">
           Explore useful insights and guides on mental health, therapy, and
           recovery — written to help patients and families understand better.
         </p>
@@ -86,15 +86,15 @@ const Blogs = () => {
               whileInView="visible"
               viewport={{ once: true }}
               variants={cardVariant}
-              className="flex flex-col sm:flex-row bg-white shadow-md rounded-xl p-4 transition hover:shadow-lg"
+              className="flex flex-col sm:flex-row bg-white dark:bg-gray-800 shadow-md rounded-xl p-4 transition hover:shadow-lg"
             >
               <img
                 src={blogs.src}
                 className="w-full sm:w-[100px] h-[150px] sm:h-[100px] object-cover rounded-md mb-3 sm:mb-0 sm:mr-4"
                 alt={`Blog ${index + 1}`}
               />
-              <div className="flex flex-col justify-between text-[12px]">
-                <p className="mb-2">{blogs.text}</p>
+              <div className="flex flex-col justify-between text-[12px] text-gray-900 dark:text-gray-300">
+                <p className="mb-2 text-gray-900 dark:text-gray-300">{blogs.text}</p>
 
                 <Link href={blogs.href}>
                   <button className="bg-[#3EC8BD] px-3 py-1 rounded-md text-white text-[10px] w-fit hover:bg-[#35b2aa] transition">

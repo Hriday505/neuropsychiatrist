@@ -95,15 +95,15 @@ const Facility = () => {
         >
           {cardData.map((item) => (
             <motion.div key={item.id} variants={cardVariant}>
-              <div className="bg-white text-black hover:bg-[#3EC8BD] hover:text-white transition-all duration-300 rounded-2xl p-6 flex flex-col items-center shadow-md">
+              <div className="bg-white dark:bg-gray-800 text-black dark:text-white hover:bg-[#3EC8BD] hover:text-white transition-all duration-300 rounded-2xl p-6 flex flex-col items-center shadow-md">
                 <img
                   src={item.icon}
                   alt={item.title}
                   className="w-[55px] h-[55px] mb-4 bg-[#3EC8BD] rounded-full p-2"
                   loading="lazy"
                 />
-                <h2 className="font-bold text-lg text-center">{item.title}</h2>
-                <p className="text-[13px] text-center mt-2">
+                <h2 className="font-bold text-lg text-center text-black dark:text-white">{item.title}</h2>
+                <p className="text-[13px] text-center mt-2 text-gray-700 dark:text-gray-300">
                   {item.description}
                 </p>
               </div>

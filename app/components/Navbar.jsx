@@ -57,7 +57,7 @@ const Navbar = () => {
   if (!mounted) return null;
 
   return (
-    <nav className="w-full fixed top-0 left-0 bg-white z-[9999] ">
+    <nav className="w-full fixed top-0 left-0 bg-white dark:bg-gray-900 z-[9999] shadow-sm">
       <div className="w-full px-4 py-3 flex items-center justify-between max-w-[1200px] mx-auto">
         {/* Logo */}
         <motion.div
@@ -66,7 +66,7 @@ const Navbar = () => {
           initial="hidden"
           animate="visible"
         >
-          <Link href="/" className="text-[40px] font-bold">
+          <Link href="/" className="text-[40px] font-bold text-gray-900 dark:text-white">
             Dr. Abir Das
           </Link>
         </motion.div>
@@ -87,7 +87,7 @@ const Navbar = () => {
             >
               {item.submenu ? (
                 <>
-                  <button className="flex items-center gap-1 hover:text-[#3EC8BD] transition duration-200">
+                  <button className="flex items-center gap-1 hover:text-[#3EC8BD] transition duration-200 text-gray-900 dark:text-white">
                     {item.name}
                     <ChevronDown size={18} />
                   </button>
@@ -100,13 +100,13 @@ const Navbar = () => {
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -10 }}
                         transition={{ duration: 0.3 }}
-                        className="absolute left-0 mt-2 w-64 bg-white shadow-lg rounded-lg p-3 space-y-2 z-[9999]"
+                        className="absolute left-0 mt-2 w-64 bg-white dark:bg-gray-800 shadow-lg rounded-lg p-3 space-y-2 z-[9999]"
                       >
                         {item.submenu.map((sub) => (
                           <li key={sub.id}>
                             <Link
                               href={sub.href}
-                              className="block px-3 py-2 hover:bg-gray-100 rounded-md"
+                              className="block px-3 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md text-gray-900 dark:text-white"
                             >
                               {sub.name}
                             </Link>
@@ -119,7 +119,7 @@ const Navbar = () => {
               ) : (
                 <Link
                   href={item.href}
-                  className="cursor-pointer hover:text-[#3EC8BD] transition duration-200"
+                  className="cursor-pointer hover:text-[#3EC8BD] transition duration-200 text-gray-900 dark:text-white"
                 >
                   {item.name}
                 </Link>
@@ -138,7 +138,7 @@ const Navbar = () => {
         <div className="lg:hidden block z-50">
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="text-black focus:outline-none"
+            className="text-black dark:text-white focus:outline-none"
           >
             {isOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
@@ -150,7 +150,7 @@ const Navbar = () => {
         initial={{ y: -20, opacity: 0 }}
         animate={{ y: isOpen ? 0 : -20, opacity: isOpen ? 1 : 0 }}
         transition={{ duration: 0.4, ease: "easeOut" }}
-        className={`lg:hidden w-full bg-white transition-all duration-300 ease-in-out ${
+        className={`lg:hidden w-full bg-white dark:bg-gray-900 transition-all duration-300 ease-in-out ${
           isOpen ? "max-h-[600px] py-4" : "max-h-0 overflow-hidden"
         }`}
       >
@@ -160,7 +160,7 @@ const Navbar = () => {
               {item.submenu ? (
                 <>
                   <button
-                    className="flex items-center gap-1 hover:text-[#3EC8BD] transition duration-200"
+                    className="flex items-center gap-1 hover:text-[#3EC8BD] transition duration-200 text-gray-900 dark:text-white"
                     onClick={() => setDropdownOpen((prev) => !prev)}
                   >
                     {item.name}
@@ -173,7 +173,7 @@ const Navbar = () => {
                         <li key={sub.id}>
                           <Link
                             href={sub.href}
-                            className="block px-3 py-2 hover:bg-gray-100 rounded-md"
+                            className="block px-3 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md text-gray-900 dark:text-white"
                             onClick={() => setIsOpen(false)}
                           >
                             {sub.name}
@@ -186,7 +186,7 @@ const Navbar = () => {
               ) : (
                 <Link
                   href={item.href}
-                  className="cursor-pointer hover:text-[#3EC8BD] transition duration-200"
+                  className="cursor-pointer hover:text-[#3EC8BD] transition duration-200 text-gray-900 dark:text-white"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.name}

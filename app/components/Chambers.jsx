@@ -202,7 +202,7 @@ export default function ChambersCards() {
   const Section = ({ title, items }) =>
     items.length ? (
       <div className="mb-10">
-        <h3 className="text-xl font-semibold text-gray-800 mb-4">{title}</h3>
+        <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-4">{title}</h3>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 font-medium ibrand-font">
           {items.map((ch) => {
             const coords = geo[ch._i];
@@ -217,14 +217,14 @@ export default function ChambersCards() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.2 }}
                 transition={{ duration: 0.5, ease: "easeOut" }}
-                className="bg-white rounded-xl shadow-md p-5 hover:shadow-xl transition duration-300 border border-gray-100 flex flex-col justify-between min-h-[240px]"
+                className="bg-white dark:bg-gray-800 rounded-xl shadow-md p-5 hover:shadow-xl transition duration-300 border border-gray-100 dark:border-gray-700 flex flex-col justify-between min-h-[240px]"
               >
                 <div>
-                  <h4 className="text-lg font-bold text-gray-800 mb-2">
+                  <h4 className="text-lg font-bold text-gray-800 dark:text-white mb-2">
                     {ch.name}
                   </h4>
-                  <p className="text-gray-600 text-sm">{ch.address}</p>
-                  <div className="mt-3 text-xs text-gray-500">
+                  <p className="text-gray-600 dark:text-gray-300 text-sm">{ch.address}</p>
+                  <div className="mt-3 text-xs text-gray-500 dark:text-gray-400">
                     {coords ? (
                       <span>
                         📍 {coords.lat.toFixed(5)}, {coords.lon.toFixed(5)}
@@ -266,7 +266,7 @@ export default function ChambersCards() {
     ) : null;
 
   return (
-    <div className="px-6 md:px-12 lg:px-20 py-14">
+    <div className="px-6 md:px-12 lg:px-20 py-14 bg-white dark:bg-gray-900">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -274,10 +274,10 @@ export default function ChambersCards() {
         transition={{ duration: 0.6 }}
         className="text-center mb-10"
       >
-        <h2 className="text-3xl text-[26px] sm:text-[32px] text-black font-medium ibrand-font">
+        <h2 className="text-3xl text-[26px] sm:text-[32px] text-black dark:text-white font-medium ibrand-font">
           🏥 Chambers
         </h2>
-        <p className="text-gray-600 mt-2">
+        <p className="text-gray-600 dark:text-gray-300 mt-2">
           Find me at these trusted clinics and medical centres
           {busy && (
             <span className="ml-2 text-xs text-gray-400">

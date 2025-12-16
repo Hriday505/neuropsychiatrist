@@ -51,7 +51,7 @@ export default function BookAppointment() {
         {/* Calendly Embed */}
         <div className="flex justify-center py-10 px-4">
           <div className="w-full max-w-3xl bg-white shadow-xl rounded-xl p-6">
-            <InlineWidget url="https://calendly.com/dhriday505/30min" />
+            <InlineWidget url="https://calendly.com/drabirdas009/30min" />
           </div>
         </div>
 

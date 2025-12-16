@@ -25,7 +25,7 @@ export default function Home() {
   return (
     <>
       <PageLoader />
-      <div className="overflow-x-hidden">
+      <div className="overflow-x-hidden bg-white dark:bg-gray-900">
         <Navbar />
 
         {/* Hero - animates immediately after load */}

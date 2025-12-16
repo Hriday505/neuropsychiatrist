@@ -27,13 +27,17 @@ export default function About() {
     { name: "OCD", href: "/ocd" },
     { name: "Schizophrenia", href: "/schizo" },
     { name: "Autism Spectrum Disorder", href: "/autism" },
+    { name: "ADHD", href: "/adhd" },
+    { name: "Sexual Dysfunction", href: "/sexual-dysfunction" },
+    { name: "Substance Abuse", href: "/sexual-abuse" },
+    { name: "Dementia", href: "/dementia" },
   ];
 
   return (
     <>
       <Navbar />
 
-      <div className="w-full">
+      <div className="w-full bg-white dark:bg-gray-900">
         {/* Hero Section */}
         <section className="pt-28 pb-16 bg-gradient-to-r from-[#3EC8BD] to-[#1FA7A0] text-white text-center">
           <motion.h1
@@ -59,7 +63,7 @@ export default function About() {
         </section>
 
         {/* Doctor's Journey */}
-        <section className="py-16 px-6 lg:px-20 flex flex-col lg:flex-row items-center gap-10">
+        <section className="py-16 px-6 lg:px-20 flex flex-col lg:flex-row items-center gap-10 bg-white dark:bg-gray-900">
           <motion.div
             variants={fadeUp}
             initial="hidden"
@@ -82,42 +86,42 @@ export default function About() {
             viewport={{ once: true }}
             className="flex-1 text-center lg:text-left"
           >
-            <h2 className="text-3xl font-bold text-teal-600 mb-4">
+            <h2 className="text-3xl font-bold text-teal-600 dark:text-teal-400 mb-4">
               Professional Journey
             </h2>
-            <p className="text-gray-600 text-lg leading-relaxed mb-4">
+            <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed mb-4">
               Completed <strong>MBBS (2006 batch)</strong> from{" "}
               <strong>North Bengal Medical College</strong>, graduating in 2012.
               After house staffship, pursued post-graduation in Psychiatry at{" "}
               <strong>Calcutta National Medical College (CNMC)</strong>, and
               successfully completed <strong>MD Psychiatry in 2018</strong>.
             </p>
-            <p className="text-gray-600 text-lg leading-relaxed mt-4">
+            <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed mt-4">
               Currently attached with <strong>ESI Hospital, Kamarhati</strong>,
               where he continues to provide specialised psychiatric care
               alongside private practice.
             </p>
-            <p className="text-gray-600 text-lg leading-relaxed mb-4">
+            <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed mb-4">
               Following MD, worked as a Senior Resident in{" "}
               <strong>NRS Medical College & Hospital</strong> and{" "}
               <strong>Uluberia Superspeciality Hospital</strong>. Alongside,
               began private practice from 2018, serving patients in Kolkata,
               Howrah, and parts of North 24 Parganas.
             </p>
-            <p className="text-gray-600 text-lg leading-relaxed">
+            <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
               Qualifications: <strong>MBBS, MD (Psychiatry), CCMSD</strong>
             </p>
           </motion.div>
         </section>
 
         {/* Treatments */}
-        <section className="py-16 bg-gray-50 px-6 lg:px-20 text-center">
+        <section className="py-16 bg-gray-50 dark:bg-gray-800 px-6 lg:px-20 text-center">
           <motion.h2
             variants={fadeUp}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="text-3xl font-bold text-teal-600 mb-10"
+            className="text-3xl font-bold text-teal-600 dark:text-teal-400 mb-10"
           >
             Conditions Treated
           </motion.h2>
@@ -126,7 +130,7 @@ export default function About() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="max-w-2xl mx-auto text-gray-600 mb-8"
+            className="max-w-2xl mx-auto text-gray-600 dark:text-gray-300 mb-8"
           >
             Providing comprehensive and personalised treatment plans for a wide
             range of psychiatric and psychological conditions:
@@ -139,9 +143,9 @@ export default function About() {
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true }}
-                  className="bg-white shadow rounded-xl p-6 hover:shadow-lg hover:bg-[#3EC8BD] hover:text-white transition cursor-pointer"
+                  className="bg-white dark:bg-gray-700 shadow rounded-xl p-6 hover:shadow-lg hover:bg-[#3EC8BD] hover:text-white transition cursor-pointer"
                 >
-                  <p className="font-semibold">{treatment.name}</p>
+                  <p className="font-semibold text-gray-900 dark:text-white">{treatment.name}</p>
                 </motion.div>
               </Link>
             ))}
@@ -182,13 +186,13 @@ export default function About() {
         </section>
 
         {/* Call to Action */}
-        <section className="py-16 text-center bg-gray-50 px-6">
+        <section className="py-16 text-center bg-gray-50 dark:bg-gray-800 px-6">
           <motion.h2
             variants={fadeUp}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="text-3xl font-bold text-gray-800"
+            className="text-3xl font-bold text-gray-800 dark:text-white"
           >
             Take the First Step Toward Better Mental Health
           </motion.h2>
@@ -197,7 +201,7 @@ export default function About() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="text-gray-600 mt-4 max-w-2xl mx-auto"
+            className="text-gray-600 dark:text-gray-300 mt-4 max-w-2xl mx-auto"
           >
             Reach out today for an appointment and begin your journey toward
             recovery and well-being.
