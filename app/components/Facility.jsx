@@ -37,20 +37,20 @@ const containerVariants = {
   hidden: {},
   show: {
     transition: {
-      staggerChildren: 0.35,
-      delayChildren: 2.4,
+      staggerChildren: 0.2,
+      delayChildren: 0.3,
     },
   },
 };
 
 const cardVariant = {
-  hidden: { opacity: 0, y: 50 },
+  hidden: { opacity: 0, y: 30 },
   show: {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 3.4,
-      ease: [0.2, 0.85, 0.4, 1],
+      duration: 0.6,
+      ease: "easeOut",
     },
   },
 };
@@ -69,7 +69,7 @@ const Facility = () => {
       <motion.div
         initial="hidden"
         whileInView="show"
-        viewport={{ once: true, amount: 0.7 }}
+        viewport={{ once: true, amount: 0.2 }}
         variants={containerVariants}
         className="relative z-10 text-white text-center px-4 max-w-[1200px] mx-auto py-12"
       >

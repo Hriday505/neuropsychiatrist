@@ -62,7 +62,7 @@ const Testimonial = () => {
 
   return (
     <div
-      className="w-full h-[60vh] relative inset-0 bg-cover bg-center"
+      className="w-full min-h-[60vh] py-8 relative inset-0 bg-cover bg-center"
       style={{ backgroundImage: `url('/img/neuro.png')` }}
     >
       {/* Overlay */}
@@ -72,66 +72,65 @@ const Testimonial = () => {
       ></div>
 
       {/* Content */}
-      <div className="relative z-20">
-        <h1 className="text-center pt-11 text-[45px] text-white font-medium ibrand-font">
+      <div className="relative z-20 px-4">
+        <h1 className="text-center pt-8 text-[28px] sm:text-[36px] lg:text-[45px] text-white font-medium ibrand-font">
           Patient Testimonial
         </h1>
-        <p className="text-white text-[12px] text-center mb-6">
-          Lorem ipsum dolor sit amet consectetur sit amet consectetur
+        <p className="text-white text-[12px] sm:text-[14px] text-center mb-6">
+          Real experiences from our patients
         </p>
 
-        {/* Scroll buttons in the same flex container */}
-        <div className="relative flex items-center justify-center">
-          {/* Left Button */}
+        {/* Scroll buttons and cards container */}
+        <div className="relative max-w-[1200px] mx-auto">
+          {/* Left Button - Hidden on mobile */}
           <button
             onClick={scrollLeft}
-            className="absolute left-[5%] top-1/2 -translate-y-1/2 z-30 w-[32px] h-[32px] rounded-full bg-white shadow-md"
+            className="hidden lg:block absolute left-0 top-1/2 -translate-y-1/2 z-30 w-[32px] h-[32px] rounded-full bg-white shadow-md"
           >
-            <FaArrowLeft className="text-[22px] m-auto" />
+            <FaArrowLeft className="text-[18px] m-auto" />
           </button>
 
           {/* Scrollable Cards */}
           <div
             ref={slideRef}
-            className="relative flex gap-6 px-4 w-[960px] mx-auto hide-scrollbar overflow-x-auto"
+            className="flex gap-4 lg:gap-6 overflow-x-auto hide-scrollbar px-4 lg:px-12"
             style={{
               scrollSnapType: "x mandatory",
-              overflowX: "scroll",
               scrollbarWidth: "none",
             }}
           >
             {Cards.map((item) => (
               <div
                 key={item.id}
-                className="w-[300px] h-[35vh] bg-white rounded-xl shadow-lg p-6 flex-shrink-0"
+                className="w-[280px] sm:w-[300px] lg:w-[320px] h-auto min-h-[280px] bg-white rounded-xl shadow-lg p-4 lg:p-6 flex-shrink-0"
                 style={{ scrollSnapAlign: "start" }}
               >
-                <div className="flex items-center mb-4">
+                <div className="flex items-center mb-3">
                   <img
                     src={item.profile}
                     alt={item.name}
-                    className="w-[55px] h-[55px] rounded-full mr-4"
+                    className="w-[45px] h-[45px] lg:w-[55px] lg:h-[55px] rounded-full mr-3"
                   />
                   <div>
-                    <h3 className="font-semibold text-gray-800">{item.name}</h3>
-                    <p className="text-sm text-gray-500">{item.treatment}</p>
+                    <h3 className="font-semibold text-gray-800 text-sm lg:text-base">{item.name}</h3>
+                    <p className="text-xs lg:text-sm text-gray-500">{item.treatment}</p>
                   </div>
                 </div>
 
-                <h4 className="text-[16px] font-bold text-gray-800 mb-2">
+                <h4 className="text-[14px] lg:text-[16px] font-bold text-gray-800 mb-2">
                   {item.headline}
                 </h4>
-                <p className="text-sm text-gray-600">{item.testimony}</p>
+                <p className="text-xs lg:text-sm text-gray-600 leading-relaxed">{item.testimony}</p>
               </div>
             ))}
           </div>
 
-          {/* Right Button */}
+          {/* Right Button - Hidden on mobile */}
           <button
             onClick={scrollRight}
-            className="absolute right-[5%] top-1/2 -translate-y-1/2 z-30 w-[32px] h-[32px] rounded-full bg-white shadow-md"
+            className="hidden lg:block absolute right-0 top-1/2 -translate-y-1/2 z-30 w-[32px] h-[32px] rounded-full bg-white shadow-md"
           >
-            <FaArrowRight className="text-[22px] m-auto" />
+            <FaArrowRight className="text-[18px] m-auto" />
           </button>
         </div>
       </div>

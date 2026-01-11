@@ -70,11 +70,11 @@ const Facilities = [
 ];
 
 const sectionVariants = {
-  hidden: { opacity: 0, y: 50 },
+  hidden: { opacity: 0, y: 30 },
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 1.5, ease: "easeOut" },
+    transition: { duration: 0.6, ease: "easeOut" },
   },
 };
 
@@ -99,11 +99,11 @@ const Serviceslist = () => {
     <motion.div
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, amount: 0.7 }}
+      viewport={{ once: true, amount: 0.2 }}
       variants={sectionVariants}
-      className="w-full px-4 py-12 bg-[#f9f9f9]"
+      className="w-full px-4 py-12 bg-[#f9f9f9] dark:bg-gray-800"
     >
-      <h1 className="text-center text-[28px] sm:text-[32px] font-semibold ibrand-font text-black mb-8">
+      <h1 className="text-center text-[28px] sm:text-[32px] font-semibold ibrand-font text-black dark:text-white mb-8">
         <span className="text-[#3EC8BD]">Treatments</span>
       </h1>
 
@@ -121,7 +121,7 @@ const Serviceslist = () => {
                     ? `bg-gradient-to-r from-[#00c6a9] to-[#00c6a9]/5 border-[#3EC8BD] text-white ${
                         isMobile ? "w-[75%] mx-auto" : "w-full"
                       }`
-                    : " text-black"
+                    : " text-black dark:text-white"
                 }
               `}
             >
@@ -134,11 +134,11 @@ const Serviceslist = () => {
         <motion.div
           initial={{ opacity: 0, x: 40 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, amount: 0.7 }}
-          transition={{ duration: 1.2, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
           className="lg:col-span-9"
         >
-          <div className="bg-white shadow-[0_4px_20px_rgba(62,200,189,0.25)] rounded-xl p-5 flex flex-col lg:flex-row items-center lg:items-start gap-6 transition-all duration-300">
+          <div className="bg-white dark:bg-gray-700 shadow-[0_4px_20px_rgba(62,200,189,0.25)] rounded-xl p-5 flex flex-col lg:flex-row items-center lg:items-start gap-6 transition-all duration-300">
             {/* Image */}
             <img
               src="https://content.jdmagicbox.com/comp/bankura/p4/9999p3242.3242.180409182546.m4p4/catalogue/dr-aritra-chakraborty-neuro-psychiatrist-lokepur-bankura-neuropsychiatrist-doctors-zw2ez50vy6.jpg"
@@ -149,10 +149,10 @@ const Serviceslist = () => {
 
             {/* Text */}
             <div className="text-center lg:text-left flex-1">
-              <h2 className="text-[18px] font-semibold text-black ibrand-font mb-2">
+              <h2 className="text-[18px] font-semibold text-black dark:text-white ibrand-font mb-2">
                 {activeFacility.service}
               </h2>
-              <p className="text-sm text-gray-600 mb-4 leading-relaxed">
+              <p className="text-sm text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
                 {activeFacility.description}
               </p>
 
