@@ -115,7 +115,7 @@ const Hero = () => {
             variants={fadeUp}
             className="text-[28px] sm:text-[36px] md:text-[44px] lg:text-[54px] leading-tight font-bold text-gray-900 dark:text-white"
           >
-            Helping You Heal <br /> With Compassion
+            elping You Heal <br /> With Compassion
           </motion.h1>
 
           <motion.p
