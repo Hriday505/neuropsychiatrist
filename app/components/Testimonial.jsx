@@ -62,7 +62,7 @@ const Testimonial = () => {
 
   return (
     <div
-      className="w-full min-h-[60vh] py-8 relative inset-0 bg-cover bg-center"
+      className="w-full min-h-[60vh] pt-24 pb-8 lg:pt-32 relative inset-0 bg-cover bg-center"
       style={{ backgroundImage: `url('/img/neuro.png')` }}
     >
       {/* Overlay */}
@@ -85,15 +85,15 @@ const Testimonial = () => {
           {/* Left Button - Hidden on mobile */}
           <button
             onClick={scrollLeft}
-            className="hidden lg:block absolute left-0 top-1/2 -translate-y-1/2 z-30 w-[32px] h-[32px] rounded-full bg-white shadow-md"
+            className="hidden   lg:block -ml-14  absolute left-0 top-1/2 -translate-y-1/2 z-30 w-[32px] h-[32px] rounded-full bg-emerald-300 shadow-md"
           >
-            <FaArrowLeft className="text-[18px] m-auto" />
+            <FaArrowLeft className="text-[18px]    m-auto" />
           </button>
 
           {/* Scrollable Cards */}
           <div
             ref={slideRef}
-            className="flex gap-4 lg:gap-6 overflow-x-auto hide-scrollbar px-4 lg:px-12"
+            className="flex gap-4 lg:gap-4 overflow-x-auto hide-scrollbar px-4 lg:px-12"
             style={{
               scrollSnapType: "x mandatory",
               scrollbarWidth: "none",
@@ -112,15 +112,21 @@ const Testimonial = () => {
                     className="w-[45px] h-[45px] lg:w-[55px] lg:h-[55px] rounded-full mr-3"
                   />
                   <div>
-                    <h3 className="font-semibold text-gray-800 text-sm lg:text-base">{item.name}</h3>
-                    <p className="text-xs lg:text-sm text-gray-500">{item.treatment}</p>
+                    <h3 className="font-semibold text-gray-800 text-sm lg:text-base">
+                      {item.name}
+                    </h3>
+                    <p className="text-xs lg:text-sm text-gray-500">
+                      {item.treatment}
+                    </p>
                   </div>
                 </div>
 
                 <h4 className="text-[14px] lg:text-[16px] font-bold text-gray-800 mb-2">
                   {item.headline}
                 </h4>
-                <p className="text-xs lg:text-sm text-gray-600 leading-relaxed">{item.testimony}</p>
+                <p className="text-xs lg:text-sm text-gray-600 leading-relaxed">
+                  {item.testimony}
+                </p>
               </div>
             ))}
           </div>
@@ -128,9 +134,9 @@ const Testimonial = () => {
           {/* Right Button - Hidden on mobile */}
           <button
             onClick={scrollRight}
-            className="hidden lg:block absolute right-0 top-1/2 -translate-y-1/2 z-30 w-[32px] h-[32px] rounded-full bg-white shadow-md"
+            className="hidden lg:block -mr-14 absolute right-0 top-1/2 -translate-y-1/2 z-30 w-[32px] h-[32px] rounded-full bg-emerald-300 shadow-md"
           >
-            <FaArrowRight className="text-[18px] m-auto" />
+            <FaArrowRight className="text-[18px]  m-auto" />
           </button>
         </div>
       </div>

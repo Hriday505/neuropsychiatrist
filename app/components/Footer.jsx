@@ -72,22 +72,22 @@ const Chambers = [
 
 // Social Icons
 const FaFacebookF = dynamic(() =>
-  import("react-icons/fa").then((mod) => mod.FaFacebookF)
+  import("react-icons/fa").then((mod) => mod.FaFacebookF),
 );
 const FaInstagram = dynamic(() =>
-  import("react-icons/fa").then((mod) => mod.FaInstagram)
+  import("react-icons/fa").then((mod) => mod.FaInstagram),
 );
 const FaXTwitter = dynamic(() =>
-  import("react-icons/fa6").then((mod) => mod.FaXTwitter)
+  import("react-icons/fa6").then((mod) => mod.FaXTwitter),
 );
 const GoLocation = dynamic(() =>
-  import("react-icons/go").then((mod) => mod.GoLocation)
+  import("react-icons/go").then((mod) => mod.GoLocation),
 );
 const MdEmail = dynamic(() =>
-  import("react-icons/md").then((mod) => mod.MdEmail)
+  import("react-icons/md").then((mod) => mod.MdEmail),
 );
 const BsTelephone = dynamic(() =>
-  import("react-icons/bs").then((mod) => mod.BsTelephone)
+  import("react-icons/bs").then((mod) => mod.BsTelephone),
 );
 
 const Footer = () => {
@@ -108,7 +108,7 @@ const Footer = () => {
             Howrah, and North 24 Parganas.
           </p>
 
-          <p className="text-white mt-4 ibrand-font font-semibold">Follow Us</p>
+          {/* <p className="text-white mt-4 ibrand-font font-semibold">Follow Us</p>
           <div className="flex space-x-3 mt-3">
             {[FaFacebookF, FaInstagram, FaXTwitter].map((Icon, idx) => (
               <div
@@ -118,7 +118,7 @@ const Footer = () => {
                 <Icon className="text-teal-500 text-[18px]" />
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
 
         {/* Main Menu */}
@@ -205,7 +205,7 @@ const Footer = () => {
         <div className="max-w-[1240px] mx-auto px-4 text-center">
           <div className="h-[1px] w-full bg-white opacity-30 mb-2"></div>
           <p className="text-white text-[12px] ibrand-font">
-            © {new Date().getFullYear()} Neuroliving. All Rights Reserved.
+            © {new Date().getFullYear()} Dr. Abir Das. All Rights Reserved.
           </p>
         </div>
       </div>

@@ -38,31 +38,31 @@ const Hero = () => {
   if (!mounted) return null;
 
   return (
-    <section className="w-full  px-4 pt-24 pb-12 lg:pt-32 lg:pb-20 bg-white dark:bg-gray-900 box-border overflow-x-hidden">
+    <section className="w-full sm:h-[103vh]  px-4 pt-24 pb-12 lg:pt-32 lg:pb-20 bg-white dark:bg-gray-900 box-border overflow-x-hidden ">
       <motion.div
         variants={container}
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.3 }}
-        className="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 items-center"
+        className="max-w-[1200px] mx-auto grid grid-cols-1 xl:grid-cols-12 gap-8 items-center"
       >
         {/* Image + Blob shape behind (no image shadow) */}
         <motion.div
           variants={slideRight}
-          className="order-1 lg:order-2 md:col-span-1 lg:col-span-6 relative"
+          className="order-1 sm:w-[80vw] xl:order-2 xl:col-span-6 relative"
         >
           {/* BLOB */}
           <svg
             aria-hidden
-            className="absolute -right-10 -top-6 lg:-right-16 lg:-top-8 w-[520px] h-[520px] z-0"
+            className="absolute -right-20 -top-6 lg:right-146 lg:-top-2 w-[420px] h-[400px] lg:w-[520px] lg:h-[520px] z-0"
             viewBox="0 0 600 600"
             xmlns="http://www.w3.org/2000/svg"
           >
             <defs>
               {/* tweak these colors to your palette */}
               <linearGradient id="blobGrad" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0%" stopColor="#ff4d8d" />
-                <stop offset="100%" stopColor="#7c3aed" />
+                <stop offset="0%" stopColor="#0a8694" />
+                <stop offset="100%" stopColor="#0a8694" />
               </linearGradient>
               <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
                 <feGaussianBlur in="SourceGraphic" stdDeviation="6" />
@@ -97,11 +97,11 @@ const Hero = () => {
 
           {/* IMAGE (no shadow) */}
           <Image
-            src="/img/profile2.png"
+            src="/img/abirdas2.0.png"
             alt="Doctor with patient"
-            width={600}
-            height={500}
-            className="relative  -mb-3 z-10 rounded-[40px]" // no shadow/ring
+            width={830}
+            height={600}
+            className="relative    lg:-ml-16  -mb-3 z-10 rounded-[40px]" // no shadow/ring
             priority
           />
         </motion.div>
@@ -109,7 +109,7 @@ const Hero = () => {
         {/* Text */}
         <motion.div
           variants={slideLeft}
-          className="order-2 lg:order-1 md:col-span-1 lg:col-span-6 text-center lg:text-left space-y-6"
+          className="order-2 z-50 xl:order-1 xl:col-span-6 text-center xl:text-left space-y-6"
         >
           <motion.h1
             variants={fadeUp}

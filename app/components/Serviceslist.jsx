@@ -10,6 +10,7 @@ const Facilities = [
     description:
       "Evidence-based therapies and medication to lift mood and restore daily functioning.",
     href: "/depression",
+    image: "/img/depressed.jpeg",
   },
   {
     id: 101,
@@ -17,6 +18,7 @@ const Facilities = [
     description:
       "Treatment to reduce constant worry and improve relaxation, focus, and confidence.",
     href: "/generalised",
+    image: "/img/Generalised.webp",
   },
   {
     id: 102,
@@ -24,6 +26,7 @@ const Facilities = [
     description:
       "Support to manage sudden panic attacks and regain control over daily life.",
     href: "/panic",
+    image: "/img/panis.webp",
   },
   {
     id: 103,
@@ -31,6 +34,7 @@ const Facilities = [
     description:
       "Therapy and care to ease intrusive thoughts and repetitive behaviours.",
     href: "/ocd",
+    image: "/img/ocd.jpg",
   },
   {
     id: 104,
@@ -38,6 +42,7 @@ const Facilities = [
     description:
       "Personalised treatment plans to improve stability, functioning, and quality of life.",
     href: "/schizo",
+    image: "/img/schizophrenia.jpg",
   },
   {
     id: 105,
@@ -45,6 +50,7 @@ const Facilities = [
     description:
       "Therapies and guidance to support communication, learning, and social development.",
     href: "/autism",
+    image: "/img/autism.jpg",
   },
   {
     id: 106,
@@ -52,6 +58,7 @@ const Facilities = [
     description:
       "Comprehensive de-addiction support with counselling and medication to reduce dependence and prevent relapse.",
     href: "/substance-abuse",
+    image: "/img/abuse.jpeg",
   },
   {
     id: 107,
@@ -59,6 +66,7 @@ const Facilities = [
     description:
       "Confidential assessment and treatment for sexual health concerns affecting intimacy, confidence, and relationships.",
     href: "/sexual-dysfunction",
+    image: "/img/dysfunction.jpg",
   },
   {
     id: 108,
@@ -66,6 +74,7 @@ const Facilities = [
     description:
       "Structured evaluation and treatment to improve focus, control impulsivity, and enhance performance at work or school.",
     href: "/adhd",
+    image: "/img/adhd.jpeg",
   },
 ];
 
@@ -141,8 +150,8 @@ const Serviceslist = () => {
           <div className="bg-white dark:bg-gray-700 shadow-[0_4px_20px_rgba(62,200,189,0.25)] rounded-xl p-5 flex flex-col lg:flex-row items-center lg:items-start gap-6 transition-all duration-300">
             {/* Image */}
             <img
-              src="https://content.jdmagicbox.com/comp/bankura/p4/9999p3242.3242.180409182546.m4p4/catalogue/dr-aritra-chakraborty-neuro-psychiatrist-lokepur-bankura-neuropsychiatrist-doctors-zw2ez50vy6.jpg"
-              alt="doctor"
+              src={activeFacility.image}
+              alt={activeFacility.service}
               className="w-full h-[35vh] max-w-[100%] sm:max-w-[400px] lg:max-w-[250px] rounded-xl object-cover shadow-lg"
               loading="lazy"
             />

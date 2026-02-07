@@ -1,33 +1,36 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import { MdPsychology, MdHealthAndSafety } from "react-icons/md";
+import { GiBrain } from "react-icons/gi";
+import { FaUserFriends } from "react-icons/fa";
 
 const cardData = [
   {
     id: 1,
     title: "Neuro-Developmental",
-    icon: "/img/icon1.png",
+    Icon: MdPsychology,
     description:
       "Comprehensive assessment and therapy for autism, ADHD, and learning challenges.",
   },
   {
     id: 2,
     title: "Psychiatric & Therapy",
-    icon: "/img/icon2.png",
+    Icon: GiBrain,
     description:
       "Diagnosis and treatment for depression, anxiety, OCD, and emotional disorders.",
   },
   {
     id: 3,
     title: "Counselling & Support",
-    icon: "/img/icon3.png",
+    Icon: FaUserFriends,
     description:
       "Personalized counselling to manage stress, relationships, and self-growth.",
   },
   {
     id: 4,
     title: "Rehabilitation Services",
-    icon: "/img/icon4.png",
+    Icon: MdHealthAndSafety,
     description:
       "Speech, occupational, and behavioral therapies for holistic recovery.",
   },
@@ -96,12 +99,9 @@ const Facility = () => {
           {cardData.map((item) => (
             <motion.div key={item.id} variants={cardVariant}>
               <div className="bg-white dark:bg-gray-800 text-black dark:text-white hover:bg-[#3EC8BD] hover:text-white transition-all duration-300 rounded-2xl p-6 flex flex-col items-center shadow-md">
-                <img
-                  src={item.icon}
-                  alt={item.title}
-                  className="w-[55px] h-[55px] mb-4 bg-[#3EC8BD] rounded-full p-2"
-                  loading="lazy"
-                />
+                <div className="w-[55px] h-[55px] mb-4 bg-[#3EC8BD] rounded-full flex items-center justify-center text-white">
+                  <item.Icon className="w-7 h-7" aria-hidden="true" />
+                </div>
                 <h2 className="font-bold text-lg text-center text-black dark:text-white">{item.title}</h2>
                 <p className="text-[13px] text-center mt-2 text-gray-700 dark:text-gray-300">
                   {item.description}
