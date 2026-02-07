@@ -99,7 +99,7 @@ const Hero = () => {
           <Image
             src="/img/abirdas2.0.png"
             alt="Doctor with patient"
-            width={830}
+            width={790}
             height={600}
             className="relative    lg:-ml-16  -mb-3 z-10 rounded-[40px]" // no shadow/ring
             priority
