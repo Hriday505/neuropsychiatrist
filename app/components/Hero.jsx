@@ -99,9 +99,9 @@ const Hero = () => {
           <Image
             src="/img/abirdas2.0.png"
             alt="Doctor with patient"
-            width={790}
+            width={750}
             height={600}
-            className="relative    lg:-ml-16  -mb-3 z-10 rounded-[40px]" // no shadow/ring
+            className="relative  lg:mt-6  lg:-ml-16  -mb-6 z-10 rounded-[40px]" // no shadow/ring
             priority
           />
         </motion.div>
