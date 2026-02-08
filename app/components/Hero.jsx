@@ -101,7 +101,7 @@ const Hero = () => {
             alt="Doctor with patient"
             width={750}
             height={600}
-            className="relative  lg:mt-6  lg:-ml-16  -mb-6 z-10 rounded-[40px]" // no shadow/ring
+            className="relative mt-10  lg:mt-6  lg:-ml-16  -mb-6 z-10 rounded-[40px]" // no shadow/ring
             priority
           />
         </motion.div>
@@ -113,7 +113,7 @@ const Hero = () => {
         >
           <motion.h1
             variants={fadeUp}
-            className="text-[28px] sm:text-[36px] md:text-[44px] lg:text-[54px] leading-tight font-bold text-gray-900 dark:text-white"
+            className="text-[28px] mt-4 lg:mt-0 sm:text-[36px] md:text-[44px] lg:text-[54px] leading-tight font-bold text-gray-900 dark:text-white"
           >
             Helping You Heal <br /> With Compassion
           </motion.h1>

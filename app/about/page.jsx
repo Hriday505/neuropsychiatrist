@@ -72,7 +72,7 @@ export default function About() {
             className="flex-1"
           >
             <Image
-              src="/img/abirdas.jpg"
+              src="/img/abirdas4.jpeg"
               alt="Doctor"
               width={600}
               height={400}
@@ -145,7 +145,9 @@ export default function About() {
                   viewport={{ once: true }}
                   className="bg-white dark:bg-gray-700 shadow rounded-xl p-6 hover:shadow-lg hover:bg-[#3EC8BD] hover:text-white transition cursor-pointer"
                 >
-                  <p className="font-semibold text-gray-900 dark:text-white">{treatment.name}</p>
+                  <p className="font-semibold text-gray-900 dark:text-white">
+                    {treatment.name}
+                  </p>
                 </motion.div>
               </Link>
             ))}

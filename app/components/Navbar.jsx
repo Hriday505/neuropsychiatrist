@@ -3,6 +3,13 @@ import React, { useState, useEffect } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
+import { Great_Vibes } from "next/font/google";
+
+const greatVibes = Great_Vibes({
+  subsets: ["latin"],
+  weight: "400",
+  display: "swap",
+});
 
 const Menue = [
   { id: "101", name: "Home", href: "/" },
@@ -66,8 +73,18 @@ const Navbar = () => {
           initial="hidden"
           animate="visible"
         >
-          <Link href="/" className="text-[40px] font-bold text-gray-900 dark:text-white">
-            Dr. Abir Das
+          <Link href="/" className="flex flex-col leading-tight">
+            <span
+              className={`${greatVibes.className} text-[30px] sm:text-[36px] italic tracking-normal text-gray-500 dark:text-gray-300`}
+            >
+              Dr. Abir Das
+            </span>
+            <span className="text-[11px] sm:text-[12px] uppercase tracking-[0.18em] text-gray-400 dark:text-gray-400">
+              MBBS, MD (Psychiatry)
+            </span>
+            <span className="text-[11px] sm:text-[12px] text-gray-400 dark:text-gray-400">
+              Consultant Neuro-Psychiatrist
+            </span>
           </Link>
         </motion.div>
 

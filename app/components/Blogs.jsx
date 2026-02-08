@@ -6,7 +6,7 @@ import Link from "next/link";
 const Blog = [
   {
     id: 200,
-    src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTuU3vgIlQDXkkCF_sX2IDeuLhD3quukijQf0cVvv5LQvmoeqKGnQZ2mVyuYs81nQv9hE&usqp=CAU",
+    src: "./img/depressed.jpeg",
     button: "Read More",
     text: "Understanding Depression: Learn about its symptoms, causes, and how timely treatment can help restore quality of life.",
     link: "/blogs/depression",
@@ -14,7 +14,7 @@ const Blog = [
   },
   {
     id: 201,
-    src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTuU3vgIlQDXkkCF_sX2IDeuLhD3quukijQf0cVvv5LQvmoeqKGnQZ2mVyuYs81nQv9hE&usqp=CAU",
+    src: "./img/panis.webp",
     button: "Read More",
     text: "Managing Anxiety & Panic Attacks: Practical coping strategies and professional treatments that bring lasting relief.",
     link: "/blogs/anxiety",
@@ -94,7 +94,9 @@ const Blogs = () => {
                 alt={`Blog ${index + 1}`}
               />
               <div className="flex flex-col justify-between text-[12px] text-gray-900 dark:text-gray-300">
-                <p className="mb-2 text-gray-900 dark:text-gray-300">{blogs.text}</p>
+                <p className="mb-2 text-gray-900 dark:text-gray-300">
+                  {blogs.text}
+                </p>
 
                 <Link href={blogs.href}>
                   <button className="bg-[#3EC8BD] px-3 py-1 rounded-md text-white text-[10px] w-fit hover:bg-[#35b2aa] transition">

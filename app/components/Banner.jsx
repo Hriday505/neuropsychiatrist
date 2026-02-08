@@ -62,12 +62,12 @@ const Banner = () => {
               transition: { duration: 1.6, ease: "easeInOut" },
             },
           }}
-          className="w-full lg:w-1/2 flex justify-center"
+          className="w-full  -ml-42 lg:-mb-10  lg:w-1/2 flex justify-center"
         >
           <img
-            src="/img/doctor.png"
+            src="/img/abirdas3.png"
             alt="Doctor"
-            className="max-h-[800px] w-auto object-contain"
+            className="max-h-[800px]  lg:w-auto object-contain"
           />
         </motion.div>
       </motion.div>
